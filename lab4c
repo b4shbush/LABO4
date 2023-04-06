@@ -1,0 +1,19 @@
+#!/bin/bash
+
+if [ "$1" = "--logs" ]; then
+  if [ -n "$2" ] && [ "$2" -eq "$2" ] 2>/dev/null; then
+    count="$2"
+  else
+    count=100
+  fi
+  for i in $(seq 1 "$count")
+  do
+    filename="log$i.txt"
+    echo "Nazwa pliku: $filename" >> "$filename"
+    echo "Nazwa skryptu: $0" >> "$filename"
+    echo "Data: $(date +%Y-%m-%d)" >> "$filename"
+  done
+else
+  echo "Nieznana opcja. Użyj --logs, aby utworzyć pliki logx.txt. Możesz podać liczbę plików, np. --logs 30."
+fi
+
