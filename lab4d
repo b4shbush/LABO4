@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo "Dostępne opcje:"
+echo "--help (-h): Wyświetla pomoc"
+echo "--date (-d): Wyświetla dzisiejszą datę"
+echo "--logs (-l): Tworzy 100 plików logx.txt i zapisuje w nich nazwę pliku, nazwę skryptu i datę"
+echo "--logs (-l) <liczba>: Tworzy określoną liczbę plików logx.txt i zapisuje w nich nazwę pliku, nazwę skryptu i datę"
+echo "--error (-e) <liczba>: Tworzy określoną liczbę plików errorx.txt i zapisuje w nich nazwę pliku, nazwę skryptu i datę"
+echo "--init: Klonuje całe repozytorium do katalogu w którym został uruchomiony oraz ustawia ścieżkę w zmiennej środowiskowej PATH"
+
