@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ "$1" = "--date" ]; then
+  date +%Y-%m-%d
+else
+  echo "Nieznana opcja. Użyj --date, aby wyświetlić dzisiejszą datę."
+fi
+
